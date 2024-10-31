@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+}
+body{
+
+}
+.wrapper{
+    
+    overflow: hidden;
+    background-color: #0e2471;
+}
+
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: red; */
+}
+.animated-div{
+    position: relative;
+    transform: rotateX(0deg) ;
+    transform: scale(0 0);
+    width: 416px;
+    height: 331px;
+}
+.img1{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    left: 0;
+}
+.content{
+    max-width: 30%;
+    padding: 50px;
+    padding-left: 200px;
+    /* margin: 0 auto; */
+    
+}
+
+
+.mobile-wrap {
+   
+    
+    /* overflow: hidden; */
+    position: relative;
+    top: 16%;
+    height: 1345px;
+    width: 90%;
+    perspective: 118px;
+    /* background-color: rebeccapurple; */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.mobile{
+    
+    
+    transform-style: preserve-3d;
+    transform-origin: top;
+    width: 90%;
+    transform: translate(0%, 0px) rotateX(5deg);
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+nav{
+  padding-left: 10rem;
+  padding-top: 1rem;
+}
+main{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-top: 120px;
+}
+p{
+    color: white;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+button{
+    background-color: #48aaad;
+    color: white;
+    padding: 0.9rem;
+    font-weight: bold;
+   border-radius: 30px;
+    border: 0;
+    margin-top: 20px;
+}

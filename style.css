@@ -7,23 +7,20 @@ body{
 .wrapper{
     
     overflow: hidden;
+    /* height: 900px; */
     /* background-color: #0e2471; */
+           background-color: red;
+
 }
 
 
-.container{
-    
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    /* background-color: red; */
-}
+
 .animated-div{
     position: relative;
     transform: rotateX(0deg) ;
     transform: scale(0 0);
-    width: 416px;
-    height: 331px;
+    width: 440px;
+    height: auto;
 }
 .img1{
     position: relative;
@@ -33,36 +30,44 @@ body{
     left: 0;
 }
 .content{
-    max-width: 30%;
+    max-width: 100%;
     padding: 50px;
+    padding-right: 50rem;
     padding-left: 200px;
     /* margin: 0 auto; */
     background-color: white;
     color: black;
 }
-
+.container{
+    
+    display: flex;
+    justify-content: center;
+    /* height: 90vh; */
+    background-color: red;
+}
 
 .mobile-wrap {
    
     
     /* overflow: hidden; */
     position: relative;
-    top: 16%;
-    height: 1345px;
+    top: 10rem;
+    height: 1445px;
     width: 90%;
     perspective: 118px;
-    /* background-color: rebeccapurple; */
+    background-color: rebeccapurple;
     z-index: 2;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 .mobile{
-    
-    
+    background-color: #48aaad;
+    height: auto;
     transform-style: preserve-3d;
     transform-origin: top;
     width: 90%;
-    transform: translate(0%, 0px) rotateX(5deg);
+    transform: translate(0%, 0px) rotateX(4.4001deg);
     display: flex;
     justify-content: center;
     /* background-color: yellow; */

@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <div style="height:5000px;background-color: black;">
+    <div style="height:5000px">
         <div class="wrapper">
         <nav>
         <div>
@@ -48,13 +48,7 @@
     
         gsap.fromTo(".mobile", 
             {
-                // rotateX:0
-                // top: -32,            
-                // x: 0,               
-                // y: 0,               
-                // rotateX: 42.0397,    
-                // scaleX: 0.9522,   
-                // scaleY: 0.9522    
+                  
 
     rotationX: 5,         
         transformOrigin: "top",
@@ -62,19 +56,17 @@
         display: "flex",
         justifyContent: "center",
         translateY: 0,       
-        translateX: -10  
+        translateX: 0 
             },
             {
-                // y: 500,             
-                // // rotateX: 1,      
-                // // scaleY: 1,      
-                // // scaleX: 1,      
-                // duration: 4,
+               
               
-                rotationX: 0,         // Ending rotation
-        translateY: 300,        // Ending vertical translation
-        translateX: 200,        // Ending horizontal translation
-        duration: 1,          // Animation duration
+                rotationX: 0,
+        translateY: 300,      
+        translateX: 200,        
+        duration: 1,   
+        width:"100px",
+        height:"50px",
         ease: "power1.out" ,
         scrollTrigger: {
                     trigger: ".animated-div",

@@ -90,25 +90,28 @@
         gsap.fromTo(
   ".mobile",
   {
-    translateY: 0,               // Starting position
-    backgroundColor: "green",
+    // translateY: 0,              
+      backgroundColor: "green",
     position: "relative",
-    top: 10,                      // Initial top position
+    // top: 10,                      
   },
   {
     position: "relative",
-    top: -90,                   // Move the element upwards by 120 pixels
-    duration: 9,                 // Duration of the animation
-    rotationX: 0,
-    ease: "power1.out",          // Easing effect
+    top: -90,                  
+    duration: 9,                   
+      rotationX: 0,
+    ease: "power1.out",          
     duration:9,
-    backgroundColor: "blue",     // Change background color
-    scrollTrigger: {
+    backgroundColor: "blue",      
+      scrollTrigger: {
       trigger: ".mobile",
-      start: "top 20%",         // Trigger when the top of the element reaches 100% of the viewport height (bottom of the viewport)
-      end: "bottom 200%",            // Animation ends when the top of the element is at 90% of the viewport height
-      scrub: true,               // Link the animation to the scroll
-      markers: true              // Enable markers for debugging
+      start: "top 20%",         
+      end: "bottom 200%", 
+    //   start: "top 20%",         
+    //   end: "bottom 30%", 
+
+      scrub: true,                
+      markers: true              
     }
   }
 );

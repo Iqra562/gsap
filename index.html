@@ -57,7 +57,7 @@
   ".mobile",
   {
     // translateY: 0,              
-      backgroundColor: "green",
+    //   backgroundColor: "green",
     position: "relative",
     // top: 10,                      
   },
@@ -68,7 +68,7 @@
       rotationX: 0,
     ease: "power1.out",          
     duration:1,
-    backgroundColor: "blue",      
+    // backgroundColor: "blue",      
       scrollTrigger: {
       trigger: ".mobile",
       start: "top 40%",         
@@ -95,16 +95,16 @@
       gsap.fromTo(
           ".mobile",
           {
-              backgroundColor: "green",
+            //   backgroundColor: "green",
               translateY: -40, // Starting position
               width:"90%"
             },
             {
-              translateY: 1100, // Move down
-              translateX: 200, // Move right
+              translateY: 2200, // Move down
+              translateX: 700, // Move right
               duration: 9,
               width:"30%",
-              backgroundColor: "orange",
+            //   backgroundColor: "orange",
               ease: "power1.out",
               scrollTrigger: {
                   trigger: ".mobile",
@@ -116,12 +116,12 @@
                           ".mobile",
                           {
                               top: 900, // Move upwards
-                              backgroundColor: "orange", // Keep the last background color
+                            //   backgroundColor: "orange", 
                           },
                           {
                               top: 0, // Move back to original position
                               duration: 3,
-                              backgroundColor: "blue", // Change to blue
+                            //   backgroundColor: "blue",
                               ease: "power1.out",
                               onComplete: () => {
                                   // Third Animation (after the second animation completes)

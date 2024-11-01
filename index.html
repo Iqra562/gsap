@@ -47,44 +47,44 @@
     </div> 
     </div>
 
-    <script>
+     <script>
         gsap.registerPlugin(ScrollTrigger);
     
-        // gsap.fromTo(".mobile", 
-//             {
+  //       gsap.fromTo(".mobile", 
+  //           {
                   
 
-//   //    position:"relative",
-//     //   top:-90,
-//     translateY:-100,
-//     heigh:20,
-//     duration:1,
-//     width:200,
-//       rotationX: 0,
-//       ease: "power1.out",    // Easing effect
-//     backgroundColor: "transparent",
-//             },
-        //     {
+  // //    position:"relative",
+  //   //   top:-90,
+  //   translateY:-100,
+  //   heigh:20,
+  //   duration:1,
+  //   width:200,
+  //     rotationX: 0,
+  //     ease: "power1.out",    // Easing effect
+  //   backgroundColor: "yellow",
+  //           },
+  //           {
                
               
-        //         rotationX: 0,
-        // translateY: 700,      
-        // translateX: 200,        
-        // duration: 9,   
-        // width:"400px",
-        // // height:"50px",
-        // ease: "power1.out" ,
-        // backgroundColor:"orange",
+  //               rotationX: 0,
+  //       translateY: 700,      
+  //       translateX: 200,        
+  //       duration: 9,   
+  //       width:"400px",
+  //       // height:"50px",
+  //       ease: "power1.out" ,
+  //       backgroundColor:"orange",
 
-        // scrollTrigger: {
-        //             trigger: ".mobile",
-        //             // start: "bottom 90%",
-        //             // end: "bottom 100%",
-        //             scrub: true,
-        //             // markers: true
-        //         }
-        //     }
-        // );
+  //       scrollTrigger: {
+  //                   trigger: ".mobile",
+  //                   start: "top 80%",
+  //                   // end: "bottom 100%",
+  //                   scrub: true,
+  //                   // markers: true
+  //               }
+  //           }
+  //       );
     
     
         gsap.fromTo(
@@ -101,24 +101,76 @@
     duration: 9,                   
       rotationX: 0,
     ease: "power1.out",          
-    duration:9,
+    duration:1,
     backgroundColor: "blue",      
       scrollTrigger: {
       trigger: ".mobile",
-      start: "top 20%",         
-      end: "bottom 200%", 
+      start: "top 40%",         
+      end: "top 1%", 
     //   start: "top 20%",         
     //   end: "bottom 30%", 
 
       scrub: true,                
-      markers: true              
+      markers: true,
+      
+      
+      
     }
   }
 );
 
     </script>
+     
     
-    
-    
+
+
+     <script>
+      // First Animation
+      gsap.fromTo(
+          ".mobile",
+          {
+              backgroundColor: "green",
+              translateY: -100, // Starting position
+          },
+          {
+              translateY: 700, // Move down
+              translateX: 200, // Move right
+              duration: 9,
+              backgroundColor: "orange",
+              ease: "power1.out",
+              scrollTrigger: {
+                  trigger: ".mobile",
+                  start: "top 1%",
+                  scrub: true,
+                  onComplete: () => {
+                      // Second Animation (after the first animation completes)
+                      gsap.fromTo(
+                          ".mobile",
+                          {
+                              top: -90, // Move upwards
+                              backgroundColor: "orange", // Keep the last background color
+                          },
+                          {
+                              top: 0, // Move back to original position
+                              duration: 3,
+                              backgroundColor: "blue", // Change to blue
+                              ease: "power1.out",
+                              onComplete: () => {
+                                  // Third Animation (after the second animation completes)
+                                  gsap.to(".mobile", {
+                                      x: -100, // Move left
+                                      y: 100, // Move down
+                                      duration: 3,
+                                      ease: "power1.out",
+                                  });
+                              },
+                          }
+                      );
+                  },
+              },
+          }
+      );
+  </script>
+  
 </body>
 </html>

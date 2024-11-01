@@ -50,41 +50,7 @@
      <script>
         gsap.registerPlugin(ScrollTrigger);
     
-  //       gsap.fromTo(".mobile", 
-  //           {
-                  
 
-  // //    position:"relative",
-  //   //   top:-90,
-  //   translateY:-100,
-  //   heigh:20,
-  //   duration:1,
-  //   width:200,
-  //     rotationX: 0,
-  //     ease: "power1.out",    // Easing effect
-  //   backgroundColor: "yellow",
-  //           },
-  //           {
-               
-              
-  //               rotationX: 0,
-  //       translateY: 700,      
-  //       translateX: 200,        
-  //       duration: 9,   
-  //       width:"400px",
-  //       // height:"50px",
-  //       ease: "power1.out" ,
-  //       backgroundColor:"orange",
-
-  //       scrollTrigger: {
-  //                   trigger: ".mobile",
-  //                   start: "top 80%",
-  //                   // end: "bottom 100%",
-  //                   scrub: true,
-  //                   // markers: true
-  //               }
-  //           }
-  //       );
     
     
         gsap.fromTo(
@@ -130,7 +96,7 @@
           ".mobile",
           {
               backgroundColor: "green",
-              translateY: -100, // Starting position
+              translateY: -40, // Starting position
           },
           {
               translateY: 700, // Move down
@@ -147,7 +113,7 @@
                       gsap.fromTo(
                           ".mobile",
                           {
-                              top: -90, // Move upwards
+                              top: 900, // Move upwards
                               backgroundColor: "orange", // Keep the last background color
                           },
                           {

@@ -7,9 +7,9 @@ body{
 .wrapper{
     
     overflow: hidden;
-    /* height: 900px; */
+    height: 100%;
     /* background-color: #0e2471; */
-           background-color: red;
+           /* background-color: red; */
 
 }
 
@@ -35,7 +35,7 @@ body{
     padding-right: 50rem;
     padding-left: 200px;
     /* margin: 0 auto; */
-    background-color: white;
+    /* background-color: white; */
     color: black;
 }
 .container{
@@ -51,9 +51,9 @@ body{
     
     /* overflow: hidden; */
     position: relative;
-    top: 10rem;
-    height: 1445px;
+    top: 4rem;
     width: 90%;
+    /* height: 1445px; */
     perspective: 118px;
     background-color: rebeccapurple;
     z-index: 2;
@@ -62,15 +62,16 @@ body{
     margin: 0 auto;
 }
 .mobile{
+    position: relative;
+    top: -20;
+    z-index: 50;
     background-color: #48aaad;
-    height: auto;
     transform-style: preserve-3d;
     transform-origin: top;
     width: 90%;
-    transform: translate(0%, 0px) rotateX(4.4001deg);
+    transform: translate(0%, 0px) rotateX(4.001deg);
     display: flex;
     justify-content: center;
-    /* background-color: yellow; */
 }
 
 nav{

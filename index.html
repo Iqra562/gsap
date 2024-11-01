@@ -50,37 +50,69 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
     
-        gsap.fromTo(".mobile", 
-            {
+        // gsap.fromTo(".mobile", 
+//             {
                   
 
-    // rotationX: 5,         
-    //     transformOrigin: "top",
-    //     width: "90%",
-    //     display: "flex",
-    //     justifyContent: "center",
-    //     translateY: 10,       
-    //     translateX: 0 
-            },
-            {
+//   //    position:"relative",
+//     //   top:-90,
+//     translateY:-100,
+//     heigh:20,
+//     duration:1,
+//     width:200,
+//       rotationX: 0,
+//       ease: "power1.out",    // Easing effect
+//     backgroundColor: "transparent",
+//             },
+        //     {
                
               
-                rotationX: 0,
-        translateY: 10,      
-        translateX: 200,        
-        duration: 9,   
-        width:"400px",
-        height:"50px",
-        ease: "power1.out" ,
-        scrollTrigger: {
-                    trigger: ".animated-div",
-                    start: "top 0%",
-                    end: "bottom 0%",
-                    scrub: true,
-                    // markers: true
-                }
-            }
-        );
+        //         rotationX: 0,
+        // translateY: 700,      
+        // translateX: 200,        
+        // duration: 9,   
+        // width:"400px",
+        // // height:"50px",
+        // ease: "power1.out" ,
+        // backgroundColor:"orange",
+
+        // scrollTrigger: {
+        //             trigger: ".mobile",
+        //             // start: "bottom 90%",
+        //             // end: "bottom 100%",
+        //             scrub: true,
+        //             // markers: true
+        //         }
+        //     }
+        // );
+    
+    
+        gsap.fromTo(
+  ".mobile",
+  {
+    translateY: 0,               // Starting position
+    backgroundColor: "green",
+    position: "relative",
+    top: 10,                      // Initial top position
+  },
+  {
+    position: "relative",
+    top: -90,                   // Move the element upwards by 120 pixels
+    duration: 9,                 // Duration of the animation
+    rotationX: 0,
+    ease: "power1.out",          // Easing effect
+    duration:9,
+    backgroundColor: "blue",     // Change background color
+    scrollTrigger: {
+      trigger: ".mobile",
+      start: "top 20%",         // Trigger when the top of the element reaches 100% of the viewport height (bottom of the viewport)
+      end: "bottom 200%",            // Animation ends when the top of the element is at 90% of the viewport height
+      scrub: true,               // Link the animation to the scroll
+      markers: true              // Enable markers for debugging
+    }
+  }
+);
+
     </script>
     
     

@@ -24,10 +24,14 @@ body{
 }
 .img1{
     position: relative;
+    width: 100%; /* Initial width for images */
+    transition: width 0.5s ease; 
 }
 .img2{
     position: absolute;
     left: 0;
+    width: 100%; /* Initial width for images */
+    transition: width 0.5s ease; 
 }
 .content{
     max-width: 100%;
